@@ -1,0 +1,31 @@
+body{
+    background-color: #e2d4b7;
+}
+.blog-title{
+    font-family: "Shadows Into Light";
+    font-size: 50px;
+    margin-top: 0;
+    color: #9C9583;
+}
+.navbar{
+    display: inline-block;
+    margin-left: 600px;
+}
+a{
+    float: right;
+    text-decoration: none;
+    margin-top: 20px;
+    width: 150px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background-color: #9C9583;
+    color: white;
+    
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
