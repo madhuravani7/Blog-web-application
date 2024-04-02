@@ -7,11 +7,13 @@
 </head>
 <body>
     <h1>Create New Post</h1>
-    <form action="/create" method="post">
+    <form action="/create" method="post" enctype="multipart/form-data">
         <label for="title">Title:</label><br>
         <input type="text" id="title" name="title" required><br>
         <label for="content">Content:</label><br>
         <textarea id="content" name="content" rows="4" cols="50" required></textarea><br>
+        <label for="image">Upload Image (Max 5MB):</label><br>
+        <input type="file" id="image" name="image" accept="image/*" required><br>
         <button type="submit">Submit</button>
     </form>
 </body>

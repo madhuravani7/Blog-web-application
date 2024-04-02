@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+</head>
+<body>
+    <h1>Edit Post</h1>
+    <form action="/edit/<%= index %>" method="post" enctype="multipart/form-data">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" value="<%= post.title %>" required><br>
+        <label for="content">Content:</label><br>
+        <textarea id="content" name="content" rows="4" cols="50" required><%= post.content %></textarea><br>
+        <label for="image">Change Image (Max 5MB):</label><br>
+        <input type="file" id="image" name="image" accept="image/*"><br> <!-- Allow users to upload a new image -->
+        <!-- Hidden input field to hold the current image filename -->
+        <input type="hidden" name="currentImage" value="<%= post.image %>">
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
