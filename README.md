@@ -1,1 +1,1 @@
-A blog web application built using node.js, express.js, javascript, html and css. Basics functions this web application can do is: let the use create a post, edit and delete it. Also, lets the user view the posts on the homepage.
+A blog web application built using node.js, express.js, javascript, html and css. Made use of EJS to build dynamic pages. Basics functions this web application can do is: let the use create a post, edit and delete it. Also, lets the user view the posts on the homepage.
