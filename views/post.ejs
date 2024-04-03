@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style1.css">
     <title>Create New Post</title>
 </head>
 <body>
-    <h1>Create New Post</h1>
+    <div class="heading">
+    <h1 class="blog-heading1">Madhu's Blog</h1>
+    <h1 class="blog-heading2">Create New Post</h1>
+    </div>
+    <div class="container">
     <form action="/create" method="post" enctype="multipart/form-data">
         <label for="title">Title:</label><br>
-        <input type="text" id="title" name="title" required><br>
+        <input type="text" id="title" name="title" required><br><br>
         <label for="content">Content:</label><br>
-        <textarea id="content" name="content" rows="4" cols="50" required></textarea><br>
-        <label for="image">Upload Image (Max 5MB):</label><br>
-        <input type="file" id="image" name="image" accept="image/*" required><br>
+        <textarea id="content" name="content" rows="4" cols="50" required></textarea><br><br>
+        <label for="image" class="custom-file-upload" id="imgae-label">
+            Choose Image
+        </label> <!--using label for image and using the same id value used in input to associate both-->
+        <input type="file" id="image" name="image" accept="image/*" required><br><br>
         <button type="submit">Submit</button>
     </form>
+    </div>
+
 </body>
 </html>
