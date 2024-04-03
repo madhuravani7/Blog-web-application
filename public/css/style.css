@@ -1,20 +1,24 @@
 body{
     background-color: #E8DDB5;
 }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 .blog-title{
     font-family: "Shadows Into Light";
     font-size: 50px;
-    margin-top: 0;
-    color: #9C9583;
-}
-.navbar{
-    display: inline-block;
-    margin-left: 600px;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+    color: #666A86;
 }
 .link{
-    float: right;
     text-decoration: none;
-    margin-top: 20px;
     width: 150px;
     padding: 8px;
     text-align: center;
@@ -34,6 +38,8 @@ button{
     color: white;  
 }
 ul{
+    display: block;
+    gap: 10px;
     list-style: none;
 }
 
@@ -43,11 +49,15 @@ a{
 }
 
 .post-image {
-    width: 300px; /* Set the width to 300 pixels */
+    width: 500px; /* Set the width to 300 pixels */
     height: auto; /* Let the height adjust proportionally based on the width */
     /* You can adjust the width and height values as needed */
-    float: center;
 }
 .properties{
     float: right;
 }
+
+.post-title, .post-content{
+    color: #666A86;
+}
+

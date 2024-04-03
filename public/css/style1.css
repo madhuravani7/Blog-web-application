@@ -1,0 +1,66 @@
+body{
+    background-color: #95B8D1;
+}
+h1{
+    color: #333333;
+    font-family: "Shadows Into Light"
+}
+.blog-heading2{
+    text-align: center;
+}
+
+.blog-heading1{
+    text-align: left;
+    
+}
+.container{
+    display: flex;
+    justify-content: center; /*horizontal alignment */
+    align-items: center; /* vertical alignment */
+    color: #333333;
+    font-size: 20px;
+}
+
+input{
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: large;
+}
+
+textarea {
+    width: 100%; 
+    padding: 20px; 
+    border: none; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif; 
+    resize: vertical; 
+    font-size: large;
+}
+
+
+.custom-file-upload, button{
+    display: inline-block;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #666A86;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Hide the original file input */
+input[type="file"] {
+    display: none;
+}
+
+button{
+    padding: 15px;
+    width: 150px;
+}
+

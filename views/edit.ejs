@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style1.css">
     <title>Edit Post</title>
 </head>
 <body>
-    <h1>Edit Post</h1>
+    <div class="heading">
+        <h1 class="blog-heading1">Madhu's Blog</h1>
+        <h1 class="blog-heading2">Edit Post</h1>
+    </div>
+    <div class="container">
     <form action="/edit/<%= index %>" method="post" enctype="multipart/form-data">
         <label for="title">Title:</label><br>
-        <input type="text" id="title" name="title" value="<%= post.title %>" required><br>
+        <input type="text" id="title" name="title" value="<%= post.title %>" required><br><br>
         <label for="content">Content:</label><br>
-        <textarea id="content" name="content" rows="4" cols="50" required><%= post.content %></textarea><br>
-        <label for="image">Change Image (Max 5MB):</label><br>
+        <textarea id="content" name="content" rows="4" cols="50" required><%= post.content %></textarea><br><br>
+        <label for="image" class="custom-file-upload">Change Image (Max 5MB):</label><br>
         <input type="file" id="image" name="image" accept="image/*"><br> <!-- Allow users to upload a new image -->
         <!-- Hidden input field to hold the current image filename -->
-        <input type="hidden" name="currentImage" value="<%= post.image %>">
+        <input type="hidden" name="currentImage" value="<%= post.image %>"><br><br>
         <button type="submit">Update</button>
     </form>
+    </div>
 </body>
 </html>
